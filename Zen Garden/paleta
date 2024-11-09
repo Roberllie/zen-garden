@@ -1,5 +1,10 @@
-Fundo: #A8C7FF
+/*Fundo: #C4CFE5
 Fonte: #532473
-Destaque: #99A0E8
+Destaque: #6886FF
 
-https://color.adobe.com/pt/search?q=Vaporwave&t=term
+https://color.adobe.com/pt/mythemes?viewTheme*/
+
+html{
+    background: #C4CFE5;
+    color: #532473;
+}
