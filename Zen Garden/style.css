@@ -77,3 +77,192 @@ footer a {
     color: #FFFFFF;
     margin: 0.5em;
 }
+
+.page-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+    box-sizing: border-box;
+}
+
+.design-menu {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    width: calc(38% - 2%);
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+
+.design-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.design-menu li {
+    margin-bottom: 1em;
+}
+/* Rodapé da seção principal */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.footer-links a {
+    flex: 1 1 100px; 
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.benefits-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1f295c;
+}
+
+.benefits-section .text {
+    flex: 0 0 70%;
+    text-align: left;
+}
+
+.benefits-section .title {
+    flex: 0 0 30%;
+    text-align: center;
+    align-self: center;
+}
+
+
+.participation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #1f295c;
+    border-bottom: 1px solid #1f295c;
+}
+
+.participation-section .item {
+    flex: 1 1 50%;
+    text-align: center;
+}
+
+
+.benefits-section + .participation-section {
+    border-top: none;
+}
+
+a {
+    color: #532473;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #322050;
+}
+
+a:visited {
+    font-weight: normal;
+    color: #6a478b;
+}
+
+.main-section p:first-of-type::first-letter {
+    font-size: 3em;
+    font-family: "Georgia", serif;
+    float: left;
+    margin-right: 0.2em;
+    line-height: 1;
+}
+
+.design-menu li {
+    border-top: 1px solid #1f295c;
+}
+
+.design-menu li:last-child {
+    border-bottom: 1px solid #1f295c;
+}
+/* Estilos gerais */
+a {
+    color: #532473;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #322050;
+}
+
+a:visited {
+    font-weight: normal;
+    color: #6a478b;
+}
+
+.main-section p:first-of-type::first-letter {
+    font-size: 3em;
+    font-family: "Georgia", serif;
+    float: left;
+    margin-right: 0.2em;
+    line-height: 1;
+}
+
+.design-menu li {
+    border-top: 1px solid #1f295c;
+}
+
+.design-menu li:last-child {
+    border-bottom: 1px solid #1f295c;
+}
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px) {
+    .design-menu {
+        position: static;
+        margin: 0;
+        padding: 0;
+    }
+
+    .explanation {
+        margin-right: 0;
+        border-right: none;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header {
+        height: auto;
+    }
+
+    p {
+        margin-top: 0;
+    }
+}
+
+/* Media Query para impressão */
+@media print {
+    body {
+        font-family: "Times", serif;
+    }
+
+    header {
+        background: #f4f4f4;
+        color: #000;
+    }
+}
+
+
